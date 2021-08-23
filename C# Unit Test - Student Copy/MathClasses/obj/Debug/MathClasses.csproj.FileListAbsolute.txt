@@ -1,0 +1,13 @@
+C:\Andrew\AIE\Subjects\Programming\C++\Course content\Maths for Games\Subject Resources\C# Unit Test - Student Copy\MathClasses\bin\Debug\MathClasses.exe.config
+C:\Andrew\AIE\Subjects\Programming\C++\Course content\Maths for Games\Subject Resources\C# Unit Test - Student Copy\MathClasses\bin\Debug\MathClasses.exe
+C:\Andrew\AIE\Subjects\Programming\C++\Course content\Maths for Games\Subject Resources\C# Unit Test - Student Copy\MathClasses\bin\Debug\MathClasses.pdb
+C:\Andrew\AIE\Subjects\Programming\C++\Course content\Maths for Games\Subject Resources\C# Unit Test - Student Copy\MathClasses\obj\Debug\MathClasses.csprojAssemblyReference.cache
+C:\Andrew\AIE\Subjects\Programming\C++\Course content\Maths for Games\Subject Resources\C# Unit Test - Student Copy\MathClasses\obj\Debug\MathClasses.exe
+C:\Andrew\AIE\Subjects\Programming\C++\Course content\Maths for Games\Subject Resources\C# Unit Test - Student Copy\MathClasses\obj\Debug\MathClasses.pdb
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\C# Unit Test - Student Copy\MathClasses\bin\Debug\MathClasses.exe.config
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\C# Unit Test - Student Copy\MathClasses\bin\Debug\MathClasses.exe
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\C# Unit Test - Student Copy\MathClasses\bin\Debug\MathClasses.pdb
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\C# Unit Test - Student Copy\MathClasses\obj\Debug\MathClasses.csprojAssemblyReference.cache
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\C# Unit Test - Student Copy\MathClasses\obj\Debug\MathClasses.csproj.CoreCompileInputs.cache
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\C# Unit Test - Student Copy\MathClasses\obj\Debug\MathClasses.exe
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\C# Unit Test - Student Copy\MathClasses\obj\Debug\MathClasses.pdb
