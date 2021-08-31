@@ -9,6 +9,7 @@ namespace MathClasses
     public class Vector3
     {
         public float x, y, z;
+        public float[,] mod_array;
 
         public Vector3()
         {
@@ -21,8 +22,16 @@ namespace MathClasses
             x = mx;
             y = my;
             z = mz;
+            mod_array = new float[3, 1] { { mx, }, { my }, { mz } };//create 2d array
+        }
+        public void update_matrix()
+        {
+            x = mod_array[0, 0];
+            y = mod_array[1, 0];
+            z = mod_array[2, 0];
         }
 
+        //Vector3 Arithmetic
         public static Vector3 operator +(Vector3 v3a, Vector3 v3b)
             {
                 return Vector3Addition(v3a, v3b);
@@ -53,6 +62,32 @@ namespace MathClasses
             v3.y *= scale_factor;
             v3.z *= scale_factor;
             return v3;
+        }
+
+        //Dot product
+        public float Dot(Vector3 v)
+        {
+            float result = x * v.x + y * v.y + z * v.z;
+            return result;
+        }
+        //Cross product
+        public Vector3 Cross(Vector3 b)
+        {
+            Vector3 cross_product = new Vector3(y * b.z - z * b.y, z * b.x - x * b.z, x * b.y - y * b.x);
+            return cross_product;
+        }
+        //Magnitude
+        public float Magnitude()
+        {
+            float mag = (float)Math.Sqrt(x * x + y * y + z * z);
+            return mag;
+        }
+        //Normalise
+        public Vector3 Normalize()
+        {
+            float mag = this.Magnitude();
+            Vector3 normal = new Vector3(x / mag, y / mag, z / mag);
+            return normal;
         }
 
     }

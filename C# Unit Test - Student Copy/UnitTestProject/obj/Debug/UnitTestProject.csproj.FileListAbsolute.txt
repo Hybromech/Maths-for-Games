@@ -1,3 +1,4 @@
 C:\Andrew\AIE\Subjects\Programming\C++\Course content\Maths for Games\Subject Resources\C# Unit Test - Student Copy\UnitTestProject\obj\Debug\UnitTestProject.csprojAssemblyReference.cache
 D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\C# Unit Test - Student Copy\UnitTestProject\obj\Debug\UnitTestProject.csprojAssemblyReference.cache
 D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\C# Unit Test - Student Copy\UnitTestProject\obj\Debug\UnitTestProject.csproj.CoreCompileInputs.cache
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\C# Unit Test - Student Copy\UnitTestProject\obj\Debug\UnitTestProject.csproj.AssemblyReference.cache

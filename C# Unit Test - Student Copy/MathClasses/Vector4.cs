@@ -9,6 +9,7 @@ namespace MathClasses
     public class Vector4
     {
         public float x, y, z, w;
+        public float[,] mod_array;
 
         public Vector4()
         {
@@ -23,11 +24,11 @@ namespace MathClasses
             y = my;
             z = mz;
             w = mw;
+            mod_array = new float[4, 1] { {x},{y},{z},{w} };//create 2d array
         }
-
+        //Vector4 Arithmetic
         public static Vector4 operator +(Vector4 v3a, Vector4 v3b)
         {
-            //Vector3 result = new Vector3();
             return Vector4Addition(v3a, v3b);
         }
         static Vector4 Vector4Addition(Vector4 v3a, Vector4 v3b)
@@ -58,6 +59,38 @@ namespace MathClasses
             v3.w *= scale_factor;
             return v3;
         }
-
+        //Dot product
+        public float Dot(Vector4 v)
+        {
+            float result = x * v.x + y * v.y + z * v.z + w * v.w;
+            return result;
+        }
+        //Cross product
+        public Vector4 Cross(Vector4 b)
+        {
+            Vector4 cross_product = new Vector4(y * b.z - z * b.y, z * b.x - x * b.z, x * b.y - y * b.x,0);
+            return cross_product;
+        }
+        //Magnitude
+        public float Magnitude()
+        {
+            float mag = (float)Math.Sqrt(x * x + y * y + z * z + w * w);
+            return mag;
+        }
+        //Normalise
+        public Vector4 Normalize()
+        {
+            float mag = this.Magnitude();
+            Vector4 normal = new Vector4(x / mag, y / mag, z / mag, w / mag);
+            return normal;
+        }
+        public void update_matrix()
+        {
+            x = mod_array[0, 0];
+            y = mod_array[1, 0];
+            z = mod_array[2, 0];
+            z = mod_array[3, 0];
+        }
     }
 }
+
