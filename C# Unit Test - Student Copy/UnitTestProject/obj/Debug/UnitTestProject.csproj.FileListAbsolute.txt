@@ -1,4 +1,18 @@
 C:\Andrew\AIE\Subjects\Programming\C++\Course content\Maths for Games\Subject Resources\C# Unit Test - Student Copy\UnitTestProject\obj\Debug\UnitTestProject.csprojAssemblyReference.cache
-D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\C# Unit Test - Student Copy\UnitTestProject\obj\Debug\UnitTestProject.csprojAssemblyReference.cache
 D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\C# Unit Test - Student Copy\UnitTestProject\obj\Debug\UnitTestProject.csproj.CoreCompileInputs.cache
 D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\C# Unit Test - Student Copy\UnitTestProject\obj\Debug\UnitTestProject.csproj.AssemblyReference.cache
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\C# Unit Test - Student Copy\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\C# Unit Test - Student Copy\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\C# Unit Test - Student Copy\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\C# Unit Test - Student Copy\UnitTestProject\bin\Debug\UnitTestProject.dll
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\C# Unit Test - Student Copy\UnitTestProject\bin\Debug\UnitTestProject.pdb
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\C# Unit Test - Student Copy\UnitTestProject\bin\Debug\MathClasses.exe
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\C# Unit Test - Student Copy\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\C# Unit Test - Student Copy\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\C# Unit Test - Student Copy\UnitTestProject\bin\Debug\MathClasses.pdb
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\C# Unit Test - Student Copy\UnitTestProject\bin\Debug\MathClasses.exe.config
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\C# Unit Test - Student Copy\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\C# Unit Test - Student Copy\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\C# Unit Test - Student Copy\UnitTestProject\obj\Debug\UnitTestProject.csproj.CopyComplete
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\C# Unit Test - Student Copy\UnitTestProject\obj\Debug\UnitTestProject.dll
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\C# Unit Test - Student Copy\UnitTestProject\obj\Debug\UnitTestProject.pdb
