@@ -1,0 +1,17 @@
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Tank Game\obj\Debug\netcoreapp3.1\Tank Game.GeneratedMSBuildEditorConfig.editorconfig
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Tank Game\obj\Debug\netcoreapp3.1\Tank Game.AssemblyInfoInputs.cache
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Tank Game\obj\Debug\netcoreapp3.1\Tank Game.AssemblyInfo.cs
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Tank Game\obj\Debug\netcoreapp3.1\Tank Game.csproj.CoreCompileInputs.cache
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Tank Game\bin\Debug\netcoreapp3.1\Tank Game.exe
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Tank Game\bin\Debug\netcoreapp3.1\Tank Game.deps.json
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Tank Game\bin\Debug\netcoreapp3.1\Tank Game.runtimeconfig.json
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Tank Game\bin\Debug\netcoreapp3.1\Tank Game.runtimeconfig.dev.json
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Tank Game\bin\Debug\netcoreapp3.1\Tank Game.dll
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Tank Game\bin\Debug\netcoreapp3.1\Tank Game.pdb
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Tank Game\bin\Debug\netcoreapp3.1\Maths Library Andrew Jonas.dll
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Tank Game\bin\Debug\netcoreapp3.1\Maths Library Andrew Jonas.pdb
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Tank Game\obj\Debug\netcoreapp3.1\Tank Game.csproj.AssemblyReference.cache
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Tank Game\obj\Debug\netcoreapp3.1\Tank Game.csproj.CopyComplete
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Tank Game\obj\Debug\netcoreapp3.1\Tank Game.dll
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Tank Game\obj\Debug\netcoreapp3.1\Tank Game.pdb
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Tank Game\obj\Debug\netcoreapp3.1\Tank Game.genruntimeconfig.cache

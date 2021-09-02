@@ -1,0 +1,10 @@
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Maths Library Andrew Jonas\obj\Debug\netcoreapp3.1\Maths Library Andrew Jonas.csproj.AssemblyReference.cache
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Maths Library Andrew Jonas\obj\Debug\netcoreapp3.1\Maths Library Andrew Jonas.GeneratedMSBuildEditorConfig.editorconfig
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Maths Library Andrew Jonas\obj\Debug\netcoreapp3.1\Maths Library Andrew Jonas.AssemblyInfoInputs.cache
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Maths Library Andrew Jonas\obj\Debug\netcoreapp3.1\Maths Library Andrew Jonas.AssemblyInfo.cs
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Maths Library Andrew Jonas\obj\Debug\netcoreapp3.1\Maths Library Andrew Jonas.csproj.CoreCompileInputs.cache
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Maths Library Andrew Jonas\obj\Debug\netcoreapp3.1\Maths Library Andrew Jonas.dll
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Maths Library Andrew Jonas\obj\Debug\netcoreapp3.1\Maths Library Andrew Jonas.pdb
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Maths Library Andrew Jonas\bin\Debug\netcoreapp3.1\Maths Library Andrew Jonas.deps.json
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Maths Library Andrew Jonas\bin\Debug\netcoreapp3.1\Maths Library Andrew Jonas.dll
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Maths Library Andrew Jonas\bin\Debug\netcoreapp3.1\Maths Library Andrew Jonas.pdb

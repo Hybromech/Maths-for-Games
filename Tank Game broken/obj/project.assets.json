@@ -1,0 +1,91 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Maths Library Andrew Jonas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Maths Library Andrew Jonas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Maths Library Andrew Jonas.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Maths Library Andrew Jonas/1.0.0": {
+      "type": "project",
+      "path": "../Maths Library Andrew Jonas/Maths Library Andrew Jonas.csproj",
+      "msbuildProject": "../Maths Library Andrew Jonas/Maths Library Andrew Jonas.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Maths Library Andrew Jonas >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\andrew\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Andrew\\AIE\\Diploma of Digital and Interactive Games\\Subjects\\Math for Games\\Projects\\Tank Game\\Tank Game.csproj",
+      "projectName": "Tank Game",
+      "projectPath": "D:\\Andrew\\AIE\\Diploma of Digital and Interactive Games\\Subjects\\Math for Games\\Projects\\Tank Game\\Tank Game.csproj",
+      "packagesPath": "C:\\Users\\andrew\\.nuget\\packages\\",
+      "outputPath": "D:\\Andrew\\AIE\\Diploma of Digital and Interactive Games\\Subjects\\Math for Games\\Projects\\Tank Game\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\andrew\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "D:\\Andrew\\AIE\\Subjects\\C# Programming\\C# Projects\\NuGet": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "D:\\Andrew\\AIE\\Diploma of Digital and Interactive Games\\Subjects\\Math for Games\\Projects\\Maths Library Andrew Jonas\\Maths Library Andrew Jonas.csproj": {
+              "projectPath": "D:\\Andrew\\AIE\\Diploma of Digital and Interactive Games\\Subjects\\Math for Games\\Projects\\Maths Library Andrew Jonas\\Maths Library Andrew Jonas.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

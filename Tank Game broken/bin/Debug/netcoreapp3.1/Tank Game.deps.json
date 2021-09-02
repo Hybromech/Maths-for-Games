@@ -1,0 +1,33 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Tank Game/1.0.0": {
+        "runtime": {
+          "Tank Game.dll": {}
+        }
+      },
+      "Maths Library Andrew Jonas/1.0.0": {
+        "runtime": {
+          "Maths Library Andrew Jonas.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Tank Game/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Maths Library Andrew Jonas/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

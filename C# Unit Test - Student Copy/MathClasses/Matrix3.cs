@@ -25,6 +25,13 @@ namespace MathClasses
             mod_array = new float[3, 3] { { m1, m2, m3 }, { m4, m5, m6 }, { m7, m8, m9 } };//create 2d array
         }
 
+        public Matrix3 CreateTranslation(Vector3 vec)//Create a translation matrix
+        {
+            return new Matrix3(1,  0,  0,
+                               0,  1,  0,
+                               vec.x, vec.y, vec.z);
+        }
+        
         public void SetRotateX(double angle)
         {
             float cosA = (float)Math.Cos(angle);

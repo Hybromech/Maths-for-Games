@@ -1,0 +1,16 @@
+C:\Andrew\AIE\Subjects\Programming\C++\Course content\Maths for Games\Subject Resources\RaylibStarterCS\Project2D\bin\Debug\Project2D.exe.config
+C:\Andrew\AIE\Subjects\Programming\C++\Course content\Maths for Games\Subject Resources\RaylibStarterCS\Project2D\bin\Debug\Project2D.exe
+C:\Andrew\AIE\Subjects\Programming\C++\Course content\Maths for Games\Subject Resources\RaylibStarterCS\Project2D\bin\Debug\Project2D.pdb
+C:\Andrew\AIE\Subjects\Programming\C++\Course content\Maths for Games\Subject Resources\RaylibStarterCS\Project2D\obj\Debug\Project2D.csprojAssemblyReference.cache
+C:\Andrew\AIE\Subjects\Programming\C++\Course content\Maths for Games\Subject Resources\RaylibStarterCS\Project2D\obj\Debug\Project2D.exe
+C:\Andrew\AIE\Subjects\Programming\C++\Course content\Maths for Games\Subject Resources\RaylibStarterCS\Project2D\obj\Debug\Project2D.pdb
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Tank Game\Project2D\obj\Debug\Project2D.csproj.CoreCompileInputs.cache
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Tank Game\Project2D\obj\Debug\Project2D.csproj.AssemblyReference.cache
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Tank Game\Project2D\bin\Debug\Project2D.exe.config
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Tank Game\Project2D\bin\Debug\Project2D.exe
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Tank Game\Project2D\bin\Debug\Project2D.pdb
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Tank Game\Project2D\obj\Debug\Project2D.csproj.CopyComplete
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Tank Game\Project2D\obj\Debug\Project2D.exe
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Tank Game\Project2D\obj\Debug\Project2D.pdb
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Tank Game\Project2D\bin\Debug\MathLib.dll
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Tank Game\Project2D\bin\Debug\MathLib.pdb

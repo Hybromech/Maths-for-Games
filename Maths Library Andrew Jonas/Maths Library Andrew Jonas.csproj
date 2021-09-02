@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Maths_Library_Andrew_Jonas</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Maths Library Andrew Jonas">
+      <HintPath>bin\Debug\netcoreapp3.1\Maths Library Andrew Jonas.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
