@@ -40,7 +40,10 @@ namespace Graphics_Test_Game
                 Console.WriteLine("Stopwatch high-resolution frequency: {0} ticks per second", Stopwatch.Frequency);
             }
 
-            tankObj = new Player();
+            SceneNode root = new SceneNode(new AMath.Matrix3());
+            SceneNode s_tank = new SceneNode();
+            s_tank.SetParent(ref root);
+            tankObj = new Player(ref s_tank);
         }
 
         public void Shutdown()
@@ -62,7 +65,7 @@ namespace Graphics_Test_Game
             frames++;
 
             // insert game logic here
-           
+            tankObj.Update_Input();
         }
 
         public void Draw()
@@ -73,6 +76,7 @@ namespace Graphics_Test_Game
 
             DrawText(fps.ToString(), 10, 10, 14, Color.RED);
 
+            
             tankObj.Draw();
 
           // DrawTexture(texture, 

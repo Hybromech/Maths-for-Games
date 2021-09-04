@@ -6,5 +6,5 @@ D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\P
 D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Maths Library Andrew Jonas\obj\Debug\netcoreapp3.1\Maths Library Andrew Jonas.dll
 D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Maths Library Andrew Jonas\obj\Debug\netcoreapp3.1\Maths Library Andrew Jonas.pdb
 D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Maths Library Andrew Jonas\bin\Debug\netcoreapp3.1\Maths Library Andrew Jonas.deps.json
-D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Maths Library Andrew Jonas\bin\Debug\netcoreapp3.1\Maths Library Andrew Jonas.dll
 D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Maths Library Andrew Jonas\bin\Debug\netcoreapp3.1\Maths Library Andrew Jonas.pdb
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Maths Library Andrew Jonas\obj\Debug\netcoreapp3.1\Maths Library Andrew Jonas.csproj.CopyComplete

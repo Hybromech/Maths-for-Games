@@ -31,6 +31,9 @@ namespace AMath
             return new Matrix3(1, 0, 0,
                                0, 1, 0,
                                vec.x, vec.y, vec.z);
+            mod_array[2, 0] = vec.x;//set m7
+            mod_array[2, 1] = vec.y;//set m8
+            mod_array[2, 2] = vec.z;//set m9
         }
 
         public Matrix3 CreateScale(float xscale, float yscale)
@@ -38,6 +41,8 @@ namespace AMath
             return new Matrix3(xscale,  0,    0,
                                  0,   yscale, 0,
                                  0,     0,    1);
+            mod_array[0, 0] = xscale;
+            mod_array[1, 1] = yscale;
         }
 
         public void SetRotateX(double angle)
@@ -49,6 +54,11 @@ namespace AMath
             m1 = 1; m2 = 0; m3 = 0; //Identity matrix
             m4 = 0; m5 = cosA; m6 = sinA;
             m7 = 0; m8 = invert_sinA; m9 = cosA;
+
+            mod_array[1, 1] = m5;//m5
+            mod_array[1, 2] = m6;//m6
+            mod_array[2, 1] = m8;//m8
+            mod_array[2, 2] = m9;//m9
         }
         public void SetRotateY(double angle)
         {
@@ -59,6 +69,11 @@ namespace AMath
             m1 = cosA; m2 = 0; m3 = invert_sinA;
             m4 = 0;    m5 = 1; m6 = 0;
             m7 = sinA; m8 = 0; m9 = cosA;
+
+            mod_array[0, 0] = m1;
+            mod_array[0, 2] = m3;
+            mod_array[2, 0] = m7;
+            mod_array[2, 2] = m9;
         }
         public void SetRotateZ(double angle)
         {
@@ -69,6 +84,11 @@ namespace AMath
             m1 = cosA;        m2 = sinA; m3 = 0;
             m4 = invert_sinA; m5 = cosA; m6 = 0;
             m7 = 0;           m8 = 0; m9 = 1;
+
+            mod_array[0, 0] = m1;
+            mod_array[0, 1] = m2;
+            mod_array[1, 0] = m4;
+            mod_array[1, 1] = m5;
         }
         //Opperator overloads
 
@@ -98,7 +118,7 @@ namespace AMath
         static Matrix3 MatrixMultiply(Matrix3 ma, Matrix3 mb)
         {
             int row, col, matrix_size;
-            matrix_size = ma.mod_array.Length;
+            matrix_size = ma.mod_array.GetLength(0);
             Matrix3 new_matrix = new Matrix3();
             
             for (row = 0; row < matrix_size; row++)
@@ -106,9 +126,11 @@ namespace AMath
                 for (col = 0; col < matrix_size; col++)
                 {
                     //Find C[row,col]   
+                    new_matrix.mod_array[col, row] = 0;//zero out
                     for (int i = 0; i < matrix_size; i++)
                     {
-                        new_matrix.mod_array[row, col] = ma.mod_array[row, col] + ma.mod_array[row, i] * mb.mod_array[i, col];
+                        
+                        new_matrix.mod_array[col, row] += ma.mod_array[i, row] * mb.mod_array[col, i];
                         new_matrix.update_matrix();//update matrix with array values.
                     }   
                 }
