@@ -25,10 +25,11 @@ namespace Graphics_Test_Game
         private Matrix3 mT;
         private Matrix3 mR;
         private Matrix3 mS;
+        
         public Player(ref SceneNode new_sceneNode)
         {
             sceneNode = new_sceneNode;
-            tank_image = LoadImage("D:/Andrew/AIE/Diploma of Digital and Interactive Games/Subjects/Math for Games/Projects/Graphics Test Game/Graphics Test Game/Images/tankRed_outline.png");
+            tank_image = LoadImage("./assets/Images/tankRed_outline.png");
             texture = LoadTextureFromImage(tank_image);
             position = new AMath.Vector3(279,201,1);
             scale = new AMath.Vector3();

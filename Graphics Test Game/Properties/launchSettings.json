@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Graphics Test Game": {
+      "commandName": "Project",
+      "workingDirectory": "$(ProjectDir)"
+    }
+  }
+}
