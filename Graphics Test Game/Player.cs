@@ -42,8 +42,10 @@ namespace Graphics_Test_Game
         }
 
         public void Update()
-        { 
+        {
             //update the tank
+            UpdateTransform();
+            Update_Input();
         }
         public void Update_Input()
         {
@@ -64,10 +66,12 @@ namespace Graphics_Test_Game
         public void Draw()
         {
             //AMath.Vector3 v = sceneNode.G
-            Vector2 vec = new Vector2(m.m7, m.m8);//vector
+            Vector2 vecPos = new Vector2(m.m7, m.m8);//position of object
+            Vector2 vecY = new Vector2(m.m2, m.m5);
             float dir = compute_dir_from_matrix(m);
             Console.WriteLine("dir is " + (float)(dir * 180 / Math.PI));
-            DrawTextureEx(texture, vec, (float)(dir * 180 / Math.PI), 1, Color.WHITE);
+            DrawLineV(vecPos, vecY, Color.GREEN);
+            DrawTextureEx(texture, vecPos, (float)(dir * 180 / Math.PI), 1, Color.WHITE);
             //Console.WriteLine("m7" + m.m3 + "m8" + m.m6);
         }
         public float compute_dir_from_matrix(Matrix3 matrix)

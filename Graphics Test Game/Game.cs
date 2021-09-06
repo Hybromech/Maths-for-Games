@@ -65,7 +65,7 @@ namespace Graphics_Test_Game
             frames++;
 
             // insert game logic here
-            tankObj.Update_Input();
+            tankObj.Update();
         }
 
         public void Draw()
