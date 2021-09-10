@@ -38,9 +38,9 @@ namespace Graphics_Test_Game
                 Console.WriteLine("Stopwatch high-resolution frequency: {0} ticks per second", Stopwatch.Frequency);
             }
 
-            SceneNode root = new SceneNode(new AMath.Matrix3());//Create the root scene node with default matrix
-            SceneNode s_tank = new SceneNode();
-            SceneNode s_tank_draw = new SceneNode();
+            SceneNode root = new SceneNode(new AMath.Matrix3(), "Root");//Create the root scene node with default matrix
+            SceneNode s_tank = new SceneNode("Tank");
+            SceneNode s_tank_draw = new SceneNode("Tank Draw");
             s_tank.SetParent(ref root);
             root.AddChild(ref s_tank);
             

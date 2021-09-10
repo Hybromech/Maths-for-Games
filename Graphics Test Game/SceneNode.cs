@@ -9,12 +9,14 @@ namespace Graphics_Test_Game
 {
     class SceneNode
     {
-        public SceneNode()
+        public SceneNode(string name)
         {
+            m_name = name;
             m_children = new List<SceneNode>();
         }
-        public SceneNode(AMath.Matrix3 local)
+        public SceneNode(AMath.Matrix3 local , string name)
         {
+            m_name = name;
             m_children = new List<SceneNode>();
             m_global_transform = local;//set initial global transform
             m_local_transform = local;//set initial global transform
@@ -35,7 +37,7 @@ namespace Graphics_Test_Game
         public void UpdateTransforms()
         {
             if (m_parent != null)
-                m_global_transform = m_parent.m_global_transform * m_local_transform;//update global transform
+                m_global_transform = m_local_transform * m_parent.m_global_transform;//update global transform
             else
                 m_global_transform = m_local_transform;
             for (int i = 0; i < m_children.Count ; ++i)
@@ -55,6 +57,7 @@ namespace Graphics_Test_Game
             return m_global_transform;//not final
         }
         //list of children
+        protected string m_name;
         protected List<SceneNode> m_children;
         protected SceneNode m_parent;
         //transform relative to parent
