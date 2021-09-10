@@ -13,11 +13,11 @@ namespace Graphics_Test_Game
         {
             m_children = new List<SceneNode>();
         }
-        public SceneNode(AMath.Matrix3 global)
+        public SceneNode(AMath.Matrix3 local)
         {
             m_children = new List<SceneNode>();
-            m_global_transform = global;//set initial global transform
-            m_local_transform = global;//set initial global transform
+            m_global_transform = local;//set initial global transform
+            m_local_transform = local;//set initial global transform
         }
 
         public void SetParent(ref SceneNode new_parent)
@@ -35,7 +35,7 @@ namespace Graphics_Test_Game
         public void UpdateTransforms()
         {
             if (m_parent != null)
-                m_global_transform = m_local_transform * m_parent.m_global_transform;//update global transform
+                m_global_transform = m_parent.m_global_transform * m_local_transform;//update global transform
             else
                 m_global_transform = m_local_transform;
             for (int i = 0; i < m_children.Count ; ++i)
@@ -45,14 +45,14 @@ namespace Graphics_Test_Game
         }
         public void SetTransform(AMath.Matrix3 new_transform)
         {
-            if (m_parent != null)
-                m_local_transform = new_transform * m_parent.m_local_transform;
-            else
+            //if (m_parent != null)
+            //    m_local_transform = new_transform * m_parent.m_local_transform;
+            //else
                 m_local_transform = new_transform;
         }
         public AMath.Matrix3 GetGlobalTransform()
         {
-            return m_local_transform;//not final
+            return m_global_transform;//not final
         }
         //list of children
         protected List<SceneNode> m_children;

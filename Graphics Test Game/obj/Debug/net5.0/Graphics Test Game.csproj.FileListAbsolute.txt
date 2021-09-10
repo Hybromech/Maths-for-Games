@@ -11,7 +11,6 @@ D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\P
 D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\bin\Debug\net5.0\ref\Graphics Test Game.dll
 D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\bin\Debug\net5.0\Graphics Test Game.pdb
 D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\bin\Debug\net5.0\Maths Library Andrew Jonas.dll
-D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\bin\Debug\net5.0\Maths Library Andrew Jonas.pdb
 D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\obj\Debug\net5.0\Graphics Test Game.csproj.CopyComplete
 D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\obj\Debug\net5.0\Graphics Test Game.dll
 D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\obj\Debug\net5.0\ref\Graphics Test Game.dll

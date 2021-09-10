@@ -38,7 +38,7 @@ namespace AMath
 
         public Matrix3 CreateScale(float xscale, float yscale)
         { 
-            return new Matrix3(xscale,  0,    0,
+            return new Matrix3(xscale,  0,    0, 
                                  0,   yscale, 0,
                                  0,     0,    1);
             mod_array[0, 0] = xscale;

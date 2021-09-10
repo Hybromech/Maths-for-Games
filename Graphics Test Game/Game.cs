@@ -21,11 +21,9 @@ namespace Graphics_Test_Game
 
         private float deltaTime = 0.005f;
 
-        public Player tankObj;
-
-        Image tank_image;
-        Texture2D texture;
-
+        public Tank_Object tankObj;
+        public Tank_Draw tank_draw;
+        public Scene scene;
         public Game()
         {
         }
@@ -40,10 +38,22 @@ namespace Graphics_Test_Game
                 Console.WriteLine("Stopwatch high-resolution frequency: {0} ticks per second", Stopwatch.Frequency);
             }
 
-            SceneNode root = new SceneNode(new AMath.Matrix3());
+            SceneNode root = new SceneNode(new AMath.Matrix3());//Create the root scene node with default matrix
             SceneNode s_tank = new SceneNode();
+            SceneNode s_tank_draw = new SceneNode();
             s_tank.SetParent(ref root);
-            tankObj = new Player(ref s_tank);
+            root.AddChild(ref s_tank);
+            
+            s_tank_draw.SetParent(ref s_tank);
+            s_tank.AddChild(ref s_tank_draw);
+
+            scene = new Scene(ref root);
+
+
+            tankObj = new Tank_Object(ref s_tank);
+            tank_draw = new Tank_Draw(ref s_tank_draw);
+            tankObj.Setup();//set matrix for tank.
+            tank_draw.Setup();//set matrix for tank draw.
         }
 
         public void Shutdown()
@@ -66,6 +76,7 @@ namespace Graphics_Test_Game
 
             // insert game logic here
             tankObj.Update();
+            scene.UpdateTransforms();           
         }
 
         public void Draw()
@@ -76,8 +87,8 @@ namespace Graphics_Test_Game
 
             DrawText(fps.ToString(), 10, 10, 14, Color.RED);
 
-            
-            tankObj.Draw();
+
+            tank_draw.Draw();
 
           // DrawTexture(texture, 
           //     GetScreenWidth() / 2 - texture.width / 2, GetScreenHeight() / 2 - texture.height / 2, Color.WHITE);

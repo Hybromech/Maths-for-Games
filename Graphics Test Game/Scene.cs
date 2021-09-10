@@ -13,5 +13,10 @@ namespace Graphics_Test_Game
             m_scene_root.UpdateTransforms();  
         }
         private SceneNode m_scene_root;
+
+        public Scene(ref SceneNode root)
+        {
+            m_scene_root = root;
+        }
     }
 }
