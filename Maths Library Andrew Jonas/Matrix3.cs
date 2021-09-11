@@ -28,21 +28,25 @@ namespace AMath
 
         public Matrix3 CreateTranslation(Vector3 vec)//Create a translation matrix
         {
-            return new Matrix3(1, 0, 0,
-                               0, 1, 0,
-                               vec.x, vec.y, vec.z);
-            mod_array[2, 0] = vec.x;//set m7
-            mod_array[2, 1] = vec.y;//set m8
+            mod_array[0, 2] = vec.x;//set m3
+            mod_array[1, 2] = vec.y;//set m6
             mod_array[2, 2] = vec.z;//set m9
+                                    //Console.WriteLine
+            update_matrix();
+            return new Matrix3(1, 0, vec.x,
+                               0, 1, vec.y,
+                               0, 0 ,vec.z);
+        
         }
 
         public Matrix3 CreateScale(float xscale, float yscale)
-        { 
+        {
+            mod_array[0, 0] = xscale;
+            mod_array[1, 1] = yscale;
+            update_matrix();
             return new Matrix3(xscale,  0,    0, 
                                  0,   yscale, 0,
                                  0,     0,    1);
-            mod_array[0, 0] = xscale;
-            mod_array[1, 1] = yscale;
         }
 
         public void SetRotateX(double angle)
@@ -120,21 +124,26 @@ namespace AMath
             int row, col, matrix_size;
             matrix_size = ma.mod_array.GetLength(0);
             Matrix3 new_matrix = new Matrix3();
-            
+
+            //list row matrix a
+            Vector3[] row_matrix = new Vector3[3];
+            row_matrix[0] = new Vector3(ma.m1, ma.m2, ma.m3);
+            row_matrix[1] = (new Vector3(ma.m4, ma.m5, ma.m6));
+            row_matrix[2] = (new Vector3(ma.m7, ma.m8, ma.m9));
+            //list columb matrix b
+            Vector3[] col_matrix = new Vector3[3];
+            col_matrix[0] = new Vector3(mb.m1, mb.m4, mb.m7);
+            col_matrix[1] = (new Vector3(mb.m2, mb.m5, mb.m8));
+            col_matrix[2] = (new Vector3(mb.m3, mb.m6, mb.m9));
+
             for (row = 0; row < matrix_size; row++)
             {
                 for (col = 0; col < matrix_size; col++)
                 {
-                    //Find C[row,col]   
-                    new_matrix.mod_array[col, row] = 0;//zero out
-                    for (int i = 0; i < matrix_size; i++)
-                    {
-                        
-                        new_matrix.mod_array[col, row] += ma.mod_array[i, row] * mb.mod_array[col, i];
-                        new_matrix.update_matrix();//update matrix with array values.
-                    }   
+                    new_matrix.mod_array[row, col] = row_matrix[row].Dot(col_matrix[col]);
                 }
             }
+            new_matrix.update_matrix();//update matrix with array values.
             return new_matrix;
         }
         static Vector3 MatrixMultiply(Matrix3 ma, Vector3 mb)

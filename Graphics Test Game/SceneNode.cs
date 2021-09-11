@@ -37,7 +37,9 @@ namespace Graphics_Test_Game
         public void UpdateTransforms()
         {
             if (m_parent != null)
+            {
                 m_global_transform = m_local_transform * m_parent.m_global_transform;//update global transform
+            }        
             else
                 m_global_transform = m_local_transform;
             for (int i = 0; i < m_children.Count ; ++i)
@@ -45,6 +47,7 @@ namespace Graphics_Test_Game
                 m_children[i].UpdateTransforms();
             }
         }
+        
         public void SetTransform(AMath.Matrix3 new_transform)
         {
             //if (m_parent != null)
@@ -55,6 +58,10 @@ namespace Graphics_Test_Game
         public AMath.Matrix3 GetGlobalTransform()
         {
             return m_global_transform;//not final
+        }
+        public AMath.Matrix3 GetLocalTransform()
+        {
+            return m_local_transform;//not final
         }
         //list of children
         protected string m_name;

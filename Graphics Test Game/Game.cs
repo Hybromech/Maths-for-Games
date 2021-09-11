@@ -27,7 +27,6 @@ namespace Graphics_Test_Game
         public Game()
         {
         }
-
         public void Init()
         {
             stopwatch.Start();
@@ -54,6 +53,20 @@ namespace Graphics_Test_Game
             tank_draw = new Tank_Draw(ref s_tank_draw);
             tankObj.Setup();//set matrix for tank.
             tank_draw.Setup();//set matrix for tank draw.
+
+            AMath.Matrix3 testma = new AMath.Matrix3();
+            AMath.Matrix3 testmb = new AMath.Matrix3();
+            AMath.Matrix3 testmc = new AMath.Matrix3(10,20,15,5,6,2,-41,-66,7);
+            AMath.Matrix3 testmd = new AMath.Matrix3(4, 5, 10, 6,14, 33, 21, 74, 32);
+            testma.CreateTranslation(new AMath.Vector3(50, 90, 33));
+            
+            testmb.CreateTranslation(new AMath.Vector3(23, 54, 12));
+            
+            Console.WriteLine("translation values are" + testmb.m3 + " " + testmb.m6);
+
+            AMath.Matrix3 result = testmc * testmd;
+            Console.WriteLine("The result of the test multiply is" + result.m1 + " " + result.m2 + " " + result.m3 + " " + result.m4 + " " + result.m5 + " " + result.m6 + " " + result.m7 + " " + result.m8 + " " + result.m9 + " ");
+            
         }
 
         public void Shutdown()

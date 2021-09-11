@@ -1,8 +1,3 @@
-D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\obj\Debug\net5.0\Graphics Test Game.GeneratedMSBuildEditorConfig.editorconfig
-D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\obj\Debug\net5.0\Graphics Test Game.AssemblyInfoInputs.cache
-D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\obj\Debug\net5.0\Graphics Test Game.AssemblyInfo.cs
-D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\obj\Debug\net5.0\Graphics Test Game.csproj.CoreCompileInputs.cache
-D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\obj\Debug\net5.0\Graphics Test Game.csproj.AssemblyReference.cache
 D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\bin\Debug\net5.0\Graphics Test Game.exe
 D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\bin\Debug\net5.0\Graphics Test Game.deps.json
 D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\bin\Debug\net5.0\Graphics Test Game.runtimeconfig.json
@@ -11,11 +6,16 @@ D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\P
 D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\bin\Debug\net5.0\ref\Graphics Test Game.dll
 D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\bin\Debug\net5.0\Graphics Test Game.pdb
 D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\bin\Debug\net5.0\Maths Library Andrew Jonas.dll
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\bin\Debug\net5.0\Raylib-cs.dll
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\bin\Debug\net5.0\Raylib-cs.pdb
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\bin\Debug\net5.0\Raylib-cs.xml
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\obj\Debug\net5.0\Graphics Test Game.GeneratedMSBuildEditorConfig.editorconfig
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\obj\Debug\net5.0\Graphics Test Game.AssemblyInfoInputs.cache
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\obj\Debug\net5.0\Graphics Test Game.AssemblyInfo.cs
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\obj\Debug\net5.0\Graphics Test Game.csproj.CoreCompileInputs.cache
 D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\obj\Debug\net5.0\Graphics Test Game.csproj.CopyComplete
 D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\obj\Debug\net5.0\Graphics Test Game.dll
 D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\obj\Debug\net5.0\ref\Graphics Test Game.dll
 D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\obj\Debug\net5.0\Graphics Test Game.pdb
 D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\obj\Debug\net5.0\Graphics Test Game.genruntimeconfig.cache
-D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\bin\Debug\net5.0\Raylib-cs.dll
-D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\bin\Debug\net5.0\Raylib-cs.pdb
-D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\bin\Debug\net5.0\Raylib-cs.xml
+D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\obj\Debug\net5.0\Graphics Test Game.csproj.AssemblyReference.cache

@@ -51,7 +51,6 @@ namespace Graphics_Test_Game
             //update the tank
             UpdateTransform();
             Update_Input();
-            DrawPixel((int)m.m7, (int)m.m8, Color.BLUE);
         }
         public void Update_Input()
         {
@@ -73,6 +72,7 @@ namespace Graphics_Test_Game
             //mT = mT.CreateTranslation(new AMath.Vector3(position.x, position.y, 1));
             //mS.CreateScale(scale.x, scale.y);
             m = mT * mR * mS;
+            Console.WriteLine("Tank rotation" + m.m1 + " " + m.m2 + " " + m.m4 + " " + m.m5);
             sceneNode.SetTransform(m);
         }
     }

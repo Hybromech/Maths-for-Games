@@ -32,7 +32,7 @@ namespace Graphics_Test_Game
             sceneNode = new_sceneNode;
             tank_image = LoadImage("./assets/Images/tankRed_outline.png");
             texture = LoadTextureFromImage(tank_image);
-            position = new AMath.Vector3(-texture.width / 2, -texture.height / 2, 1);
+            position = new AMath.Vector3(-texture.width / 2, -texture.height / 2, 1);//offset
             m = new Matrix3();
             mT = new Matrix3();
             mR = new Matrix3();
@@ -48,12 +48,15 @@ namespace Graphics_Test_Game
         public void Draw()
         {
             AMath.Matrix3 matrix = sceneNode.GetGlobalTransform();
+            AMath.Matrix3 matrix_local = sceneNode.GetLocalTransform();
             float dir = compute_angle_from_vector(matrix.m2, matrix.m5);
-            Console.WriteLine("the tank is being drawn at" + matrix.m7 + "," + matrix.m8);
-            Vector2 vecPos = new Vector2(matrix.m7, matrix.m8);//position of object
+            Console.WriteLine("Global tank is being drawn at" + matrix.m3 + "," + matrix.m6);
+            Console.WriteLine("Local tank is being drawn at" + matrix_local.m3 + "," + matrix_local.m6);
+            Vector2 vecPos = new Vector2(matrix.m3, matrix.m6);//position of object
             //Vector2 vecY = new Vector2(m.m2, m.m5);  
             //DrawLineV(vecPos, vecY, Color.GREEN);
             DrawTextureEx(texture, vecPos, dir, 1, Color.WHITE);
+            DrawCircle((int)matrix.m3, (int)matrix.m6, 10.0f, Color.BLUE);
         }
         public float compute_angle_from_vector(float x, float y)
         {
