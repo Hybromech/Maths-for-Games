@@ -13,8 +13,8 @@ namespace Graphics_Test_Game
         static void Main(string[] args)
         {
             Game game = new Game();
-            SetTargetFPS(60);
-            InitWindow(640, 480, "Tank Simulator");
+
+            InitWindow(640, 480, "Hello World");
 
             game.Init();
 
@@ -25,6 +25,7 @@ namespace Graphics_Test_Game
             }
 
             game.Shutdown();
+
             CloseWindow();
         }
     }

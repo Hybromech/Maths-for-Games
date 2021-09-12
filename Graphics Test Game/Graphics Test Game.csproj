@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Backup\**" />
+    <EmbeddedResource Remove="Backup\**" />
+    <None Remove="Backup\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="Maths Library Andrew Jonas">
       <HintPath>..\Maths Library Andrew Jonas\bin\Debug\netcoreapp3.1\Maths Library Andrew Jonas.dll</HintPath>
     </Reference>
