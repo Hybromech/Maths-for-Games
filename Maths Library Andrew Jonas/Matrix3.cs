@@ -49,23 +49,13 @@ namespace AMath
         }
         public void SetScale(float xscale, float yscale)
         {
-            m1 = xscale;
-            m5 = yscale;
+            m1 = m1 * xscale;
+            m5 = m5 * yscale;
         }
         public void Scale(float xscale, float yscale)
         {
             m1 *= xscale;
             m5 *= yscale;
-        }
-        public void RotateZ(double angle)
-        {
-            float cosA = (float)Math.Cos(angle);
-            float sinA = (float)Math.Sin(angle);
-            float invert_sinA = -(float)Math.Sin(angle);
-            m1 += cosA;
-            m2 += sinA;
-            m4 += invert_sinA;
-            m5 += cosA;
         }
         public void SetRotateX(double angle)
         {

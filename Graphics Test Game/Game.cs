@@ -12,12 +12,14 @@ namespace Graphics_Test_Game
 {
     class Game
     {
-        SceneObject tankObject = new SceneObject();
-        SceneObject turretObject = new SceneObject();
+        SceneObject WorldObject = new SceneObject();
+        SceneObject tankObject = new SceneObject(1.8f);
+        SceneObject turretObject = new SceneObject(1.8f);
 
         SpriteObject tankSprite = new SpriteObject();
         SpriteObject turretSprite = new SpriteObject();
 
+        List<SceneObject> bulletObjects = new List<SceneObject>();
         Stopwatch stopwatch = new Stopwatch();
         
         private long currentTime = 0;
@@ -26,11 +28,42 @@ namespace Graphics_Test_Game
         private int fps = 1;
         private int frames;
         private float speed;
+        private float bullet_speed;
+        private bool can_shoot;
+        private float timer1;
+        private float reload_time;
+        private float start_time;
 
         private float deltaTime = 0.005f;
 
         public Game()
         {
+        }
+        public void RemoveObjectFromList(ref SceneObject so, ref List<SceneObject>list)
+        {
+            Console.WriteLine("A bullet has been destroyed");
+            Console.WriteLine("List size is" + " " + list.Count);
+            so.Parent.RemoveChild(so);
+            list.Remove(so);
+            so = null;
+        }
+        public void UpdateTimer(ref float timer)
+        {
+            float game_time = stopwatch.ElapsedMilliseconds * 0.001f;
+            timer = game_time - start_time;
+            if (timer >= reload_time)
+            {
+                can_shoot = true;
+                timer = 0;
+            }
+        }
+        public void SetTimer(float timer)
+        {
+            float game_time = stopwatch.ElapsedMilliseconds * 0.001f;
+            if (timer == 0)
+            {
+                start_time = game_time;
+            }
         }
         public void Test_matrix()
         {
@@ -45,13 +78,18 @@ namespace Graphics_Test_Game
         }
         public void Init()
         {
+            can_shoot = true;
+            reload_time = 0.2f;
+            speed = 150;
+            bullet_speed = 600;
+            
             tankSprite.name = "tankSprite";
             turretSprite.name = "turretSprite";
             tankObject.name = "tankObject";
             turretObject.name = "turretObject";
-            tankSprite.Load("./assets/Images/tankRed_outline.png");
+            tankSprite.Load("./assets/Images/tank.png");
             turretSprite.Load("./assets/Images/barrelBlack_outline.png");
-            speed = 150;
+            
             //sprite is facing the wrong way... fix that here
             tankSprite.SetRotate(-90 * (float)(Math.PI / 180.0f));
             // sets an offset for the base, so it rotates around the centre
@@ -69,6 +107,7 @@ namespace Graphics_Test_Game
             turretObject.AddChild(turretSprite);
             tankObject.AddChild(tankSprite);
             tankObject.AddChild(turretObject);
+            WorldObject.AddChild(tankObject);
 
             // having an empty object for the tank parent means we can set the
             // position/rotation of the tank without
@@ -113,6 +152,14 @@ namespace Graphics_Test_Game
             {
                 tankObject.Rotate(-deltaTime);
             }
+            if (IsKeyDown(KeyboardKey.KEY_Q))
+            {
+                turretObject.Rotate(deltaTime);
+            }
+            if (IsKeyDown(KeyboardKey.KEY_E))
+            {
+                turretObject.Rotate(-deltaTime);
+            }
             if (IsKeyDown(KeyboardKey.KEY_W))
             {
                 Vector3 facing = new Vector3(tankObject.LocalTransform.m1,tankObject.LocalTransform.m4, 1);
@@ -125,8 +172,48 @@ namespace Graphics_Test_Game
                 facing = facing * deltaTime * speed;
                 tankObject.Translate(facing);
             }
+            if (IsKeyDown(KeyboardKey.KEY_SPACE))
+            {
+                    SetTimer(timer1);
+                if (can_shoot)
+                {
+                    //Create a new bullet
+                    SceneObject bulletObject = new SceneObject();
+                    SpriteObject bulletSprite = new SpriteObject();
+                    //bulletSprite.SetScale(0.9f, 0.9f);
+                    bulletSprite.Load("./assets/Images/bullet.png");
+                    bulletSprite.SetRotate(90 * (float)(Math.PI / 180.0f));
+                    bulletSprite.SetPosition(new Vector3(-turretSprite.Height / 2 + 11, turretSprite.Width / 2 - 7, 1.0f));
 
-                            tankObject.Update(deltaTime);
+                    bulletObject.AddChild(bulletSprite);
+                    turretObject.AddChild(bulletObject);
+                    Vector3 pos = new Vector3(bulletObject.Parent.GlobalTransform.m1 + turretSprite.Height * -1, bulletObject.Parent.GlobalTransform.m2, 1);
+                    bulletObject.SetPosition(pos);
+                    turretObject.RemoveChild(bulletObject);//Detach the bullet
+                    WorldObject.AddChild(bulletObject);
+                    bulletObject.SetLocalTransform(bulletObject.Parent.GlobalTransform * bulletObject.GlobalTransform);
+                    bulletObjects.Add(bulletObject);
+                }
+                can_shoot = false;
+            }
+            SceneObject junk = null;
+            foreach (var b in bulletObjects)
+            {
+                    Vector3 facing = new Vector3(b.LocalTransform.m1, b.LocalTransform.m4, 1);
+                    facing = facing * deltaTime * -bullet_speed;
+                    b.Translate(facing);
+                Console.WriteLine(b.GlobalTransform.m3);
+                if (b.GlobalTransform.m3 < 0 || b.GlobalTransform.m3 > (float)GetScreenWidth() || b.GlobalTransform.m6 < 0 || b.GlobalTransform.m6 > (float)GetScreenHeight())
+                {
+                    junk = b;
+                }
+            }
+            if(junk != null)
+            RemoveObjectFromList(ref junk, ref bulletObjects);
+
+            WorldObject.Update(deltaTime);
+            UpdateTimer(ref timer1);
+            
         }
 
         public void Draw()
@@ -134,14 +221,17 @@ namespace Graphics_Test_Game
             BeginDrawing();
 
             ClearBackground(Color.WHITE);
-            
+
             DrawText(fps.ToString(), 10, 10, 14, Color.RED);
-
-            tankObject.Draw();
-            //DrawCircle((int)tankSprite.GlobalTransform.m3, (int)tankSprite.GlobalTransform.m6, 15, Color.RED);
-            //DrawCircle((int)tankObject.GlobalTransform.m3, (int)tankObject.GlobalTransform.m6, 15, Color.BLUE);
-            //DrawCircle((int)turretObject.GlobalTransform.m3, (int)turretObject.GlobalTransform.m6, 8, Color.GREEN);
-
+            //DrawText(timer1.ToString(), 10, 10, 14, Color.RED);
+            
+            WorldObject.Draw();
+            
+            //DrawCircle((int)tankSprite.GlobalTransform.m3, (int)tankSprite.GlobalTransform.m6, 5, Color.RED);
+            //DrawCircle((int)tankObject.GlobalTransform.m3, (int)tankObject.GlobalTransform.m6, 5, Color.BLUE);
+            DrawCircle((int)turretObject.GlobalTransform.m3, (int)turretObject.GlobalTransform.m6, 2, Color.GREEN);
+            //if (bulletObject != null)
+            //    DrawCircle((int)bulletObject.GlobalTransform.m3, (int)bulletObject.GlobalTransform.m6, 2, Color.MAGENTA);
             EndDrawing();
         }
 

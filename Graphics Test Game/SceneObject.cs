@@ -34,10 +34,12 @@ namespace Graphics_Test_Game
             get { return parent; }
         }
 
-        public SceneObject()
+        public SceneObject(){}
+        
+        public SceneObject(float m_rotation_speed)
         {
             rotation = 0;
-            rotation_speed = 1.8f;
+            rotation_speed = m_rotation_speed;
         }
 
         void UpdateTransform()
@@ -49,9 +51,13 @@ namespace Graphics_Test_Game
             foreach (SceneObject child in children)
                 child.UpdateTransform();
         }
-        
+
         //Functions to manipulate local transform
 
+        public void SetLocalTransform(Matrix3 m)
+        {
+            localTransform = m;  
+        }
         public void SetPosition(Vector3 pos)
         {
             localTransform.SetPosition(pos);
@@ -90,7 +96,7 @@ namespace Graphics_Test_Game
         }
         public virtual void OnDraw()
         {
-            Console.WriteLine(name + " pos is " + GlobalTransform.m3 + " " + GlobalTransform.m6);
+            //Console.WriteLine(name + " pos is " + GlobalTransform.m3 + " " + GlobalTransform.m6);
         }
 
         public void Update(float deltatime)

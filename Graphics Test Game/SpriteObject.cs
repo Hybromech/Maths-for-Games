@@ -31,7 +31,9 @@ namespace Graphics_Test_Game
         public void Load(string filename)
         {
             Image img = LoadImage(filename);
+            ImageResize(ref img, img.width * (int)localTransform.m1, img.height * (int)localTransform.m5);
             texture = LoadTextureFromImage(img);
+            //Console.WriteLine("the image scale is" + texture.width + " " + texture.height);
         }
 
         public override void OnDraw()
@@ -41,7 +43,7 @@ namespace Graphics_Test_Game
             Vector2 pos = new Vector2(globalTransform.m3, globalTransform.m6);
             
             Raylib.DrawTextureEx(texture, pos,rotation, 1, Color.WHITE);
-            Console.WriteLine(name + " pos is " + GlobalTransform.m3 + " " + GlobalTransform.m6);
+            //Console.WriteLine(name + " pos is " + GlobalTransform.m3 + " " + GlobalTransform.m6);
         }
 
     }
