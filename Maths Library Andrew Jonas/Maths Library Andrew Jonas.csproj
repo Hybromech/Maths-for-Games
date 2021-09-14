@@ -5,6 +5,10 @@
     <RootNamespace>Maths_Library_Andrew_Jonas</RootNamespace>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Math for Games\Projects\Graphics Test Game\assets</OutputPath>
+  </PropertyGroup>
+
   <ItemGroup>
     <Reference Include="Maths Library Andrew Jonas">
       <HintPath>bin\Debug\netcoreapp3.1\Maths Library Andrew Jonas.dll</HintPath>

@@ -40,13 +40,12 @@ namespace AMath
         {
             m3 = vec.x;
             m6 = vec.y;
-            m9 = vec.z;
+            m9 = 1; //m9 must be 1 or else no translation will be applied.
         }
         public void Translate(Vector3 vec)
         {
             m3 += vec.x;
             m6 += vec.y;
-            m9 += vec.z;
         }
         public void SetScale(float xscale, float yscale)
         {
@@ -126,7 +125,7 @@ namespace AMath
         static Matrix3 MatrixMultiply(Matrix3 ma, Matrix3 mb)
         {
             int row, col, matrix_size;
-            matrix_size = ma.mod_array.GetLength(0);
+            matrix_size = 3;
             Matrix3 n = new Matrix3();
 
             float[,] mrray = new float[3,3];

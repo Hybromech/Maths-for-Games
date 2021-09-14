@@ -15,14 +15,18 @@ namespace Graphics_Test_Game
 
         protected Matrix3 localTransform = new Matrix3();
         protected Matrix3 globalTransform = new Matrix3();
+        protected float rotation;
+        protected float rotation_speed;
+        public String name;
+        
 
         public Matrix3 LocalTransform
         {
-            get { return LocalTransform; }
+            get { return localTransform; }
         }
         public Matrix3 GlobalTransform
         {
-            get { return GlobalTransform; }
+            get { return globalTransform; }
         }
 
         public SceneObject Parent
@@ -31,8 +35,9 @@ namespace Graphics_Test_Game
         }
 
         public SceneObject()
-        { 
-        
+        {
+            rotation = 0;
+            rotation_speed = 1.8f;
         }
 
         void UpdateTransform()
@@ -44,7 +49,7 @@ namespace Graphics_Test_Game
             foreach (SceneObject child in children)
                 child.UpdateTransform();
         }
-
+        
         //Functions to manipulate local transform
 
         public void SetPosition(Vector3 pos)
@@ -55,6 +60,7 @@ namespace Graphics_Test_Game
         public void Translate(Vector3 vec)
         {
             localTransform.Translate(vec);
+            UpdateTransform();
         }
         public void SetRotate(float radians)
         {
@@ -63,7 +69,8 @@ namespace Graphics_Test_Game
         }
         public void Rotate(float radians)
         {
-            localTransform.RotateZ(radians);
+            rotation += radians * rotation_speed;
+            localTransform.SetRotateZ(rotation);
             UpdateTransform();
         }
         public void SetScale(float width, float height)
@@ -76,30 +83,14 @@ namespace Graphics_Test_Game
             localTransform.Scale(width, height);
             UpdateTransform();
         }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+                
         public virtual void OnUpdate(float deltaTime)
         { 
             
         }
         public virtual void OnDraw()
-        { 
-        
+        {
+            Console.WriteLine(name + " pos is " + GlobalTransform.m3 + " " + GlobalTransform.m6);
         }
 
         public void Update(float deltatime)
