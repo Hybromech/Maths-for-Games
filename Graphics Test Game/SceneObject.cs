@@ -1,4 +1,5 @@
 ﻿///Created by Andrew Jonas 22/09/2021
+
 using AMath;//Include custom math library
 using System;
 using System.Collections.Generic;
@@ -75,9 +76,9 @@ namespace Graphics_Test_Game
             localTransform.SetRotateZ(radians);
             UpdateTransform();
         }
-        public void Rotate(float radians)
+        public void Rotate(float deltaTime)
         {
-            rotation += radians * rotation_speed;
+            rotation += rotation_speed * deltaTime;
             localTransform.SetRotateZ(rotation);
             UpdateTransform();
         }

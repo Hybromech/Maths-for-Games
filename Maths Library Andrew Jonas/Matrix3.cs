@@ -66,7 +66,7 @@ namespace AMath
                                  0, 0, zscale);
         }
 
-        public Matrix3 CreatePosition(Vector3 vec)//Create a translation matrix
+        public Matrix3 InitTranslation(Vector3 vec)//Create a translation matrix
         {                                     
             return new Matrix3(1, 0, vec.x,
                                0, 1, vec.y,
@@ -85,9 +85,6 @@ namespace AMath
             m6 += vec.y;
         }
 
-      
-      
-       
         //Opperator overloads
 
         public static Matrix3 operator *(Matrix3 a, Matrix3 b)

@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MathClasses;
 
-namespace UnitTestProject
+namespace AMath
 {
     [TestClass]
     public class UnitTest1

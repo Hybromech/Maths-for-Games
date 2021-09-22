@@ -8,25 +8,25 @@
     ".NETCoreApp,Version=v5.0": {
       "Graphics Test Game/1.0.0": {
         "dependencies": {
-          "MathClasses": "1.0.0.0",
           "Maths Library Andrew Jonas": "1.0.0.0",
+          "MathsLibrary": "1.0.0.0",
           "Raylib-cs": "0.0.0.0"
         },
         "runtime": {
           "Graphics Test Game.dll": {}
         }
       },
-      "MathClasses/1.0.0.0": {
+      "Maths Library Andrew Jonas/1.0.0.0": {
         "runtime": {
-          "MathClasses.dll": {
+          "Maths Library Andrew Jonas.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
       },
-      "Maths Library Andrew Jonas/1.0.0.0": {
+      "MathsLibrary/1.0.0.0": {
         "runtime": {
-          "Maths Library Andrew Jonas.dll": {
+          "MathsLibrary.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -48,12 +48,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "MathClasses/1.0.0.0": {
+    "Maths Library Andrew Jonas/1.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "Maths Library Andrew Jonas/1.0.0.0": {
+    "MathsLibrary/1.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

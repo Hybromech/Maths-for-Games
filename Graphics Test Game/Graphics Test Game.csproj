@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -26,6 +26,9 @@
     </Reference>
     <Reference Include="Maths Library Andrew Jonas">
       <HintPath>..\Maths Library Andrew Jonas\bin\Debug\netcoreapp3.1\Maths Library Andrew Jonas.dll</HintPath>
+    </Reference>
+    <Reference Include="MathsLibrary">
+      <HintPath>..\..\Peer review\Thomas Ellis\MathsLibrary\MathsLibrary\bin\Debug\netstandard2.0\MathsLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Raylib-cs">
       <HintPath>..\..\Material\Subject Resources\ray lib binaries\Raylib-cs-master\Raylib-cs\bin\Debug\netstandard2.1\Raylib-cs.dll</HintPath>
