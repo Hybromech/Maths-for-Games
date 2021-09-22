@@ -1,4 +1,5 @@
-﻿using AMath;
+﻿///Created by Andrew Jonas 22/09/2021
+using AMath;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -12,6 +13,7 @@ namespace Graphics_Test_Game
 {
     class Game
     {
+        //Setup Scene Objects and variables
         SceneObject WorldObject = new SceneObject();
         SceneObject tankObject = new SceneObject(1.8f);
         SceneObject turretObject = new SceneObject(1.8f);
@@ -39,7 +41,8 @@ namespace Graphics_Test_Game
         public Game()
         {
         }
-        public void RemoveObjectFromList(ref SceneObject so, ref List<SceneObject>list)
+        //Remove and Object from a list
+        public static void RemoveObjectFromList(ref SceneObject so, ref List<SceneObject>list)
         {
             Console.WriteLine("A bullet has been destroyed");
             Console.WriteLine("List size is" + " " + list.Count);
@@ -65,7 +68,8 @@ namespace Graphics_Test_Game
                 start_time = game_time;
             }
         }
-        public void Test_matrix()
+        //A method to test matrix multiplication
+        public static void Test_matrix()
         {
             AMath.Matrix3 testma = new AMath.Matrix3();
             AMath.Matrix3 testmb = new AMath.Matrix3();
@@ -76,6 +80,7 @@ namespace Graphics_Test_Game
             AMath.Matrix3 result = testma * testmb;
             Console.WriteLine("The result of the test multiply is" + result.m1 + " " + result.m2 + " " + result.m3 + " " + result.m4 + " " + result.m5 + " " + result.m6 + " " + result.m7 + " " + result.m8 + " " + result.m9 + " ");
         }
+        //Initialise game objects
         public void Init()
         {
             can_shoot = true;
@@ -132,6 +137,7 @@ namespace Graphics_Test_Game
 
         public void Update()
         {
+            //Calcuate delta time
             lastTime = currentTime;
             currentTime = stopwatch.ElapsedMilliseconds;
             deltaTime = (currentTime - lastTime) / 1000.0f;
@@ -143,7 +149,7 @@ namespace Graphics_Test_Game
                 timer -= 1;
             }
             frames++;
-
+            //Input handling
             if (IsKeyDown(KeyboardKey.KEY_A))
             {
                 tankObject.Rotate(deltaTime);

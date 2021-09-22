@@ -1,4 +1,5 @@
-﻿using System;
+﻿///Created by Andrew Jonas 22/09/2021
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,6 +29,7 @@ namespace Graphics_Test_Game
             get { return texture.height; }
         }
 
+        //Load the sprite from a file name
         public void Load(string filename)
         {
             Image img = LoadImage(filename);
@@ -39,10 +41,10 @@ namespace Graphics_Test_Game
         public override void OnDraw()
         {
             float rotation = (float)Math.Atan2(globalTransform.m4, globalTransform.m1);//Clean the angle
-            rotation *= (float)(180 / Math.PI);//convert radian into degrees
-            Vector2 pos = new Vector2(globalTransform.m3, globalTransform.m6);
+            rotation *= (float)(180 / Math.PI);//convert radian into degrees since raylib requires degrees.
+            Vector2 pos = new Vector2(globalTransform.m3, globalTransform.m6);//position to draw object
             
-            Raylib.DrawTextureEx(texture, pos,rotation, 1, Color.WHITE);
+            Raylib.DrawTextureEx(texture, pos,rotation, 1, Color.WHITE);//Draw the texture
             //Console.WriteLine(name + " pos is " + GlobalTransform.m3 + " " + GlobalTransform.m6);
         }
 

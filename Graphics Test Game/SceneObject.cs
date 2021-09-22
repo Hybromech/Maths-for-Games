@@ -1,4 +1,5 @@
-﻿using AMath;
+﻿///Created by Andrew Jonas 22/09/2021
+using AMath;//Include custom math library
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -8,13 +9,14 @@ using System.Threading.Tasks;
 
 namespace Graphics_Test_Game
 {
+    //Base object in the scene which is part of a hierarchy
     class SceneObject
     {
-        protected SceneObject parent = null;
-        protected List<SceneObject> children = new List<SceneObject>();
+        protected SceneObject parent = null;//the objects parent
+        protected List<SceneObject> children = new List<SceneObject>();// a list of this objects children
 
-        protected Matrix3 localTransform = new Matrix3();
-        protected Matrix3 globalTransform = new Matrix3();
+        protected Matrix3 localTransform = new Matrix3();//the objects transform relative to its parent
+        protected Matrix3 globalTransform = new Matrix3();//the objects global transform relative to the world
         protected float rotation;
         protected float rotation_speed;
         public String name;
@@ -41,11 +43,11 @@ namespace Graphics_Test_Game
             rotation = 0;
             rotation_speed = m_rotation_speed;
         }
-
+        //Update the objects transform
         void UpdateTransform()
         {
-            if (parent != null)
-                globalTransform = parent.globalTransform * localTransform;
+            if (parent != null)//if there is a parent
+                globalTransform = parent.globalTransform * localTransform;//Calculate global transform using matrix multiplication
             else
                 globalTransform = localTransform;
             foreach (SceneObject child in children)
@@ -60,7 +62,7 @@ namespace Graphics_Test_Game
         }
         public void SetPosition(Vector3 pos)
         {
-            localTransform.SetPosition(pos);
+            localTransform.SetTranslation(pos);
             UpdateTransform();
         }
         public void Translate(Vector3 vec)
@@ -81,12 +83,12 @@ namespace Graphics_Test_Game
         }
         public void SetScale(float width, float height)
         {
-            localTransform.SetScale(width, height);
+            localTransform.SetScaled(width, height, 1);
             UpdateTransform();
         }
         public void Scale(float width, float height)
         {
-            localTransform.Scale(width, height);
+            localTransform.Scale(width, height, 1);
             UpdateTransform();
         }
                 
@@ -123,7 +125,7 @@ namespace Graphics_Test_Game
         }
 
 
-        
+        //Methods to manipulate the hierarchy
         public int GetChildCount()
         {
             return children.Count;

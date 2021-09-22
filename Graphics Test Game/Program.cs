@@ -12,19 +12,19 @@ namespace Graphics_Test_Game
     {
         static void Main(string[] args)
         {
-            Game game = new Game();
-            SetTargetFPS(60);
-            InitWindow(640, 480, "Tank Simulator");
+            Game game = new Game();//Create a new game object
+            SetTargetFPS(60);//Set target frames per second
+            InitWindow(640, 480, "Tank Simulator");//Set the size of the window
 
-            game.Init();
+            game.Init();//Call the Init method on game which will set things up
 
-            while (!WindowShouldClose())
+            while (!WindowShouldClose())//Keep playing the game if the window is open
             {
-                game.Update();
-                game.Draw();
+                game.Update();//Update the game
+                game.Draw();//Draw the games sprites
             }
 
-            game.Shutdown();
+            game.Shutdown();//Exit the game
             CloseWindow();
         }
     }

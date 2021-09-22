@@ -24,19 +24,56 @@ namespace AMath
             m7 = n7; m8 = n8; m9 = n9;
         }
 
+        public void SetRotateX(double angle)
+        {
+            float cosA = (float)Math.Cos(angle);
+            float sinA = (float)Math.Sin(angle);
+            float invert_sinA = -(float)Math.Sin(angle);
+
+            m5 = cosA; m6 = sinA;
+            m8 = invert_sinA; m9 = cosA;
+        }
+        public void SetRotateY(double angle)
+        {
+            float cosA = (float)Math.Cos(angle);
+            float sinA = (float)Math.Sin(angle);
+            float invert_sinA = -(float)Math.Sin(angle);
+
+            m1 = cosA; m3 = invert_sinA;
+            m7 = sinA; m9 = cosA;
+        }
+        public void SetRotateZ(double angle)
+        {
+            float cosA = (float)Math.Cos(angle);
+            float sinA = (float)Math.Sin(angle);
+            float invert_sinA = -(float)Math.Sin(angle);
+
+            m1 = cosA; m2 = sinA;
+            m4 = invert_sinA; m5 = cosA;
+
+        }
+        public void Scale(float xscale, float yscale, float zscale)
+        {
+            m1 *= xscale;
+            m5 *= yscale;
+            m9 *= zscale;
+        }
+
+        public Matrix3 SetScaled(float xscale, float yscale, float zscale)
+        {
+            return new Matrix3(xscale, 0, 0,
+                                 0, yscale, 0,
+                                 0, 0, zscale);
+        }
+
         public Matrix3 CreatePosition(Vector3 vec)//Create a translation matrix
         {                                     
             return new Matrix3(1, 0, vec.x,
                                0, 1, vec.y,
                                0, 0 ,vec.z);
         }
-        public Matrix3 CreateScale(float xscale, float yscale)
-        {
-            return new Matrix3(xscale, 0, 0,
-                                 0, yscale, 0,
-                                 0, 0, 1);
-        }
-        public void SetPosition(Vector3 vec)//Set a translation matrix
+           
+        public void SetTranslation(Vector3 vec)//Set a translation matrix
         {
             m3 = vec.x;
             m6 = vec.y;
@@ -47,47 +84,10 @@ namespace AMath
             m3 += vec.x;
             m6 += vec.y;
         }
-        public void SetScale(float xscale, float yscale)
-        {
-            m1 = m1 * xscale;
-            m5 = m5 * yscale;
-        }
-        public void Scale(float xscale, float yscale)
-        {
-            m1 *= xscale;
-            m5 *= yscale;
-        }
-        public void SetRotateX(double angle)
-        {
-            float cosA = (float)Math.Cos(angle);
-            float sinA = (float)Math.Sin(angle);
-            float invert_sinA = -(float)Math.Sin(angle);
 
-             m5 = cosA; m6 = sinA;
-             m8 = invert_sinA; m9 = cosA;
-        }
-        public void SetRotateY(double angle)
-        {
-            float cosA = (float)Math.Cos(angle);
-            float sinA = (float)Math.Sin(angle);
-            float invert_sinA = -(float)Math.Sin(angle);
-
-            m1 = cosA; m3 = invert_sinA;
-            m7 = sinA; m9 = cosA;     
-        }
-        public void SetRotateZ(double angle)
-        {
-            float cosA = (float)Math.Cos(angle);
-            float sinA = (float)Math.Sin(angle);
-            float invert_sinA = -(float)Math.Sin(angle);
-
-            m1 = cosA;        m2 = sinA;
-            m4 = invert_sinA; m5 = cosA;
-                   
-        }
+      
+      
        
-        
-
         //Opperator overloads
 
         public static Matrix3 operator *(Matrix3 a, Matrix3 b)
